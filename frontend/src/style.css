@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; color: #333; }
+
+/* ── 认证页 ── */
+.auth-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.auth-card { background: #fff; padding: 40px 36px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,.15); width: 400px; max-width: 90vw; }
+.auth-card h2 { text-align: center; margin-bottom: 24px; color: #667eea; font-size: 22px; }
+.auth-card h2 span { font-size: 28px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 6px; font-size: 14px; color: #666; }
+.form-group input { width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; transition: border .2s; }
+.form-group input:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,.15); }
+.btn { width: 100%; padding: 11px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; transition: all .2s; }
+.btn-primary { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; }
+.btn-primary:hover { opacity: .9; transform: translateY(-1px); }
+.btn:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+.auth-link { text-align: center; margin-top: 14px; font-size: 14px; color: #999; }
+.auth-link a { color: #667eea; text-decoration: none; }
+.auth-link a:hover { text-decoration: underline; }
+.error-msg { background: #fff0f0; color: #e74c3c; padding: 8px 12px; border-radius: 6px; margin-bottom: 12px; font-size: 13px; }
+

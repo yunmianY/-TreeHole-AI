@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python --version)",
+      "Bash(.venv/Scripts/pip list *)",
+      "Bash(.venv/Scripts/pip install *)",
+      "Bash(../.venv/Scripts/python -c \"from app.core.config import settings; from app.core.database import engine, Base; from app.core.security import hash_password, create_access_token; print\\('Core imports OK'\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python -m pip install -r backend/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple)",
+      "Bash(.venv/Scripts/python -m pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple)",
+      "Bash(.venv/Scripts/python -m pip install --upgrade pip)",
+      "Bash(.venv/Scripts/python -m pip install fastapi uvicorn sqlalchemy pydantic pydantic-settings \"python-jose[cryptography]\" \"passlib[bcrypt]\" python-multipart langchain langchain-openai httpx -i https://mirrors.aliyun.com/pypi/simple/)",
+      "Bash(../.venv/Scripts/python -c ' *)",
+      "Bash(../.venv/Scripts/python -m uvicorn app.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s http://localhost:8000/)",
+      "Bash(curl *)",
+      "Bash(powershell -Command 'Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }')",
+      "Bash(.venv/Scripts/python -c ' *)",
+      "Bash(npm install *)",
+      "Bash(npx vite *)",
+      "Bash(.venv/Scripts/python backend/test_api.py)",
+      "Bash(powershell -Command 'Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }')",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python backend/test_api.py)",
+      "Bash(export HF_HUB_DISABLE_SSL_VERIFY=1)",
+      "Bash(export CURL_CA_BUNDLE=\"\")",
+      "Bash(export REQUESTS_CA_BUNDLE=\"\")",
+      "Bash(rm -f \"D:/小洛专场/聊天助手agent/backend/data/treehole.db\")",
+      "Bash(rm -rf \"D:/小洛专场/聊天助手agent/backend/data/chroma\")",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python -c ' *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app/services/wechat_bot.py'\\).read\\(\\)\\); print\\('wechat_bot.py: OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app/services/wechat_ai_providers.py'\\).read\\(\\)\\); print\\('wechat_ai_providers.py: OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app/main.py'\\).read\\(\\)\\); print\\('main.py: OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app/core/config.py'\\).read\\(\\)\\); print\\('config.py: OK'\\)\")"
+    ]
+  }
+}
